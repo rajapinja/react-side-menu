@@ -1,0 +1,429 @@
+/* src/App.css */
+.app {
+  display: flex;
+  align-content: center;
+}
+
+.app-container {
+  display: flex;
+  height: 90vh; /* Ensure the container takes up the full viewport height */
+  /* width: 100vw;  */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding-bottom: 10px;
+  padding-left: 250px; /* Adjust this value to match the width of your side menu */
+  overflow: auto; /* Add a scrollbar when content overflows */
+  z-index: 1;
+  align-content:start;
+  align-items:start;  
+  display: flex;
+}
+
+.content-wrapper {  
+  /* padding: 20px;  */
+  background-color: rgb(241, 241, 241); 
+  /* width:max-content;   */
+  flex-grow: 1; 
+  display: flex;
+  justify-content: start; /* Center content horizontally */
+  align-items: start; /* Center content vertically */  
+  padding-left: 70px; /* Adjust this value to match the width of your side menu */
+  /* padding-bottom: 160px; */
+}
+/* Make the links visible in the side menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0; /* Set left to 0 to keep it fixed */
+  width: 200px;
+  height: 100%; 
+  background-color: #364d6e;
+  padding: 20px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1; /* Ensure the side menu is above the main content */
+  overflow-y: auto; /* Add a scrollbar when content overflows */
+  color: white; /* Change link color to white */
+  text-decoration: none; /* Remove underlines */
+}
+.wrapper {
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  height: 100vh; /* Make the wrapper take the full height of the viewport */
+}
+
+
+.side-menu.open {
+  left: 250px;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  margin-bottom: 10px;
+}
+
+.side-menu a:hover {
+  text-decoration: underline; /* Add underline on hover if desired */
+}
+
+.Logo {
+  background-color: transparent;
+  background-image: url(./components/images/raja_pinja.jpg); 
+}
+
+img {
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.clogo{
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+.clogo_1{
+  border-radius: 40px;
+  width: 45px;
+  height: 45px;
+}
+
+.hr-color{
+  height: 4px;
+  background-color:  rgb(13, 27, 211);
+}
+
+.hr-layout{
+  position: relative;
+  margin-left: 120px;
+  height: 0.4px;  
+  width: 82%;
+  background-color:  rgb(43, 152, 225);
+}
+
+.companyText{
+  margin-left: 110px;
+  margin-bottom: 0px;
+}
+
+.innovate{ 
+  margin-top: 60px;
+  font-size: smaller;
+  color: #0eac77;
+  font-weight: 900;
+}
+
+.incorporation{
+  font-size: x-small;
+  color: #db9212;
+  font-weight: 600;
+ 
+}
+
+.incorporationname{
+  font-size: x-small;
+  color: #0727c9;
+  font-weight: 600;
+}
+
+.product{
+  font-size: x-small;
+  color: #078544;
+  font-weight: 600;
+ 
+}
+.caption{
+  font-size: x-small;
+  color: #140f91;
+}
+
+.startupIndia{
+  font-size: x-small;
+  color: #036e0c;
+  font-weight: 800;
+}
+
+.certificate {
+  font-size: small;
+  color: #44067b;
+  font-weight: 900;
+}
+
+.estext {
+  position: absolute;
+  color: rgb(94, 97, 99);
+  font-size: var(--extra-small-text);
+ /*margin-bottom: auto;*/
+ /*margin-left: 350px; */
+}
+
+
+/* Apply background color to even rows */
+th{
+  background-color: #97c6ef;
+  font-weight: bold;
+  width: 20%;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  width: 5%;
+}
+
+/* Apply background color to odd rows */
+tr:nth-child(odd) {
+  background-color: #ffffff;
+  width: 5%;
+}
+
+/* New */
+::after,
+::before {
+  box-sizing: border-box;
+}
+/* fonts */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap"); */
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /* grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+  --grey-light:#e2e8f0;
+  
+
+  /* fonts  */
+
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+  /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--textColor);
+  /* margin: 0;
+  font-family: Arial, sans-serif; */
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+small,
+.text-small {
+  font-size: var(--small-text);
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+footer {
+  background-color:none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 10px;
+  width: 98%;
+  margin-left: -130px; /* Adjust this value to match the width of your side menu */
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  margin-left: 250px;
+}
+
+
+.hr-line {
+  width: 100%;
+  background:linear-gradient(rgba(212, 208, 16, 0.91),transparent);/*var( --grey-light);*/
+  background-color: rgba(149, 38, 18, 0.678); 
+  /* margin-left: 250px; */
+}
+
+.error {
+  font-size: 12px;
+  color: var(--red-dark);
+}
+/* Inputs Alignment*/
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: '0 0 0 10px',
+}
+
+.inputCenter { 
+  align-items: center;
+}
+
+/* Card Laout */
+.card-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  gap: 20px;
+  /* Add any other styles you need */
+  /* margin-bottom: 10px; */
+}
+
+.card {
+  background-color: #b2cfcb;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  /* margin: 10px; */
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  /* width: 'calc(33.33% - 10px)', */
+  /* margin-bottom: 15px; */
+  
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add this CSS to style the card titles */
+.card-title {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Define different background colors for different cards */
+
+.card1 {
+  background-color: #9af1aa; /* Example color 2 */
+}
+
+.card2 {
+  background-color: #f7b5a6; /* Example color 1 */
+}
+
+.card3 {
+  background-color: #84d6f9; /* Example color 1 */
+}
+
+.card4 {
+  background-color:  #0eac77; /* Example color 1 */
+}
+
+.hr-footer{
+  position: relative;
+  margin-left: 120px;
+  height: 0.4px;  
+  width: 82%;
+  background:linear-gradient(rgba(196, 196, 171, 0.91),transparent);/*var( --grey-light);*/
+  background-color: rgba(175, 231, 238, 0.678); 
+  /* margin-left: 250px; */
+}
+
+.content {
+  margin: 20px; 
+  padding: 20px; 
+  background-color: #f5f5f5;  
+}
+.photo{
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
+  border-width: 5px;
+
+}
+
+.scrollable-container {
+  width: 300px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  overflow: auto; /* Enable scrolling */
+  border: 1px solid #ccc; /* Example border style */
+}
+
+.scrollable-content {
+  padding: 10px; /* Add padding to content */
+}
+
+

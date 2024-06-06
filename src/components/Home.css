@@ -1,0 +1,91 @@
+
+
+  
+/* Card Laout */
+.card-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Two columns with equal width */
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  gap: 20px;
+  /* Add any other styles you need */
+  /* margin-bottom: 10px; */
+}
+
+.card {
+  background-color: #b2cfcb;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  /* margin: 10px; */
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  /* width: 'calc(33.33% - 10px)', */
+  /* margin-bottom: 15px; */
+  
+}
+
+card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add this CSS to style the card titles */
+.card-title {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Define different background colors for different cards */
+
+.card1 {
+  background-color: #91c49e; /* Example color 2 */
+  background-image: image('C:\_Raja\_React_Projects\side-menu-app\src\components\images\freelancer_img.jpg');
+}
+
+
+.card2 {
+  background-color: #f8cfc6; /* Example color 1 */
+}
+
+.card3 {
+  background-color: #a8dff7; /* Example color 1 */
+}
+
+.card4 {
+  background-color:  #acc3d2; /* Example color 1 */
+}
+
+
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* .footer {
+    margin-top: 0;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  } */
+  

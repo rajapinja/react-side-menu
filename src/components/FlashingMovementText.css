@@ -1,0 +1,25 @@
+.flashing-movement-text {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: flash 1s infinite linear;
+  }
+  
+  @keyframes flash {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(20px);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(-20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  

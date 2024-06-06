@@ -1,0 +1,61 @@
+/* src/components/Header.css */
+.header {   
+    display: flex;
+    flex-direction: column;
+    background-color: #466285;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 70px;
+    z-index: 2;   
+  }  
+   .header-title {
+    font-size: 24px;    
+  }  
+  .header-subtitle {
+    font-size: 12px;    
+    text-shadow: color-mix(in hsl shorter hue, color percentage, color percentage);
+    color: rgb(51, 235, 10);
+  }  
+  /* Style for subscript and superscript */
+  header-subtitle sub {
+    vertical-align: sub; /* Subscript */
+  }  
+  header-subtitle sup {
+    vertical-align: super; /* Superscript */
+  }
+   
+
+  /* Default styles for all screen sizes */
+/* .header-title {
+  font-size: 24px;
+}
+
+.header-subtitle {
+  font-size: 16px;
+}  */
+
+/* Media query for screens with a maximum width of 768px (typical for tablets) */
+/* @media (max-width: 768px) {
+  .header-title {
+    font-size: 26px;
+  }
+
+  .header-subtitle {
+    font-size: 14px;
+    color: rgb(51, 235, 10);
+  }
+} */
+
+/* Media query for screens with a maximum width of 480px (typical for mobile devices) */
+/* @media (max-width: 480px) {
+  .header-title {
+    font-size: 18px;
+  }
+
+  .header-subtitle {
+    font-size: 12px;
+    color: rgb(51, 235, 10);
+
+  }
+} */
